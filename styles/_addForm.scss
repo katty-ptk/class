@@ -1,0 +1,43 @@
+.add-student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    left: 0;
+
+    border-right: 3px solid $borderColor;
+
+    input {
+        width: 60%;
+        height: 30px;
+        margin-top: 40px;
+        border-radius: 15px;
+        outline: none;
+        padding: 5px 15px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        background: $borderColor;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            background: $bgColor;
+            color: $borderColor;
+        }
+    }
+}
