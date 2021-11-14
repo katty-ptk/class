@@ -1,0 +1,44 @@
+.all-students {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .one-student {
+        display: flex;
+        font-family: 'Noto Sans', sans-serif;
+
+        // &:first-child {
+        //     margin-top: 30%;
+        // }
+
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+        
+        img {
+            width: 150px;
+            border-radius: 20%;
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            margin-left: 30px;
+
+            > *:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

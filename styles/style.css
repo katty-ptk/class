@@ -38,6 +38,38 @@
   color: #F9F3DF;
 }
 
+.all-students {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.all-students .one-student {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+}
+.all-students .one-student:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.all-students .one-student img {
+  width: 150px;
+  border-radius: 20%;
+}
+.all-students .one-student .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+.all-students .one-student .info > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
