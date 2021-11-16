@@ -45,6 +45,7 @@
   align-items: center;
   position: absolute;
   left: 50%;
+  padding-right: 50px;
   height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
