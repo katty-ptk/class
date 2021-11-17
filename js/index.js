@@ -14,30 +14,34 @@ function addStudent() {
         image_link 
     );
     
-    students_array.all_students.forEach( student => {
-        const studentDiv = document.createElement('div');
-        studentDiv.classList.add('one-student');
-        const studentInfo = document.createElement('div');
-        studentInfo.classList.add('info');
-    
-        const student_name = document.createElement('h3');
-        const student_age = document.createElement('p');
-        const student_email = document.createElement('p');
-        const student_image = document.createElement('img');
-    
-        student_name.textContent = student.name;
-        student_age.textContent = student.age;
-        student_email.textContent = student.email;
-        student_image.src = "../katty.jpg";
-    
-        studentDiv.appendChild(student_image);
-        studentInfo.appendChild(student_name);
-        studentInfo.appendChild(student_age);
-        studentInfo.appendChild(student_email);
-    
-        studentDiv.appendChild(student_image);
-        studentDiv.appendChild(studentInfo);
-        main_div.appendChild(studentDiv);
-    });
+    const studentDiv = document.createElement('div');
+    studentDiv.classList.add('one-student');
+    const studentInfo = document.createElement('div');
+    studentInfo.classList.add('info');
+
+    const student_name = document.createElement('h3');
+    const student_age = document.createElement('p');
+    const student_email = document.createElement('p');
+    const student_image = document.createElement('img');
+
+    student_name.textContent = name;
+    student_age.textContent = age;
+    student_email.textContent = email;
+    student_image.src = "../katty.jpg";
+
+    studentDiv.appendChild(student_image);
+    studentInfo.appendChild(student_name);
+    studentInfo.appendChild(student_age);
+    studentInfo.appendChild(student_email);
+
+    studentDiv.appendChild(student_image);
+    studentDiv.appendChild(studentInfo);
+    main_div.appendChild(studentDiv);
     $('input').val('');
+}
+
+function addToDom() {
+    students_array.all_students.forEach( student => {
+    });
+
 }

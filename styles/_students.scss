@@ -1,24 +1,23 @@
 .all-students {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: space-around;
+    align-items: left;
 
     position: absolute;
-    left: 50%;
+    left: 45%;
     padding-right: 50px;
 
-    height: 90%;
+    max-height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
+
+    // border: 3px solid coral;
 
     .one-student {
         display: flex;
         font-family: 'Noto Sans', sans-serif;
-
-        // &:first-child {
-        //     margin-top: 30%;
-        // }
+        margin-left: 10px;
 
         &:not(:last-of-type) {
             margin-bottom: 30px;

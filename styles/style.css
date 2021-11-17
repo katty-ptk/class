@@ -41,18 +41,18 @@
 .all-students {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
   position: absolute;
-  left: 50%;
+  left: 45%;
   padding-right: 50px;
-  height: 90%;
+  max-height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
 }
 .all-students .one-student {
   display: flex;
   font-family: "Noto Sans", sans-serif;
+  margin-left: 10px;
 }
 .all-students .one-student:not(:last-of-type) {
   margin-bottom: 30px;
