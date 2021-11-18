@@ -52,13 +52,13 @@
 .all-students .one-student {
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .all-students .one-student:not(:last-of-type) {
   margin-bottom: 30px;
 }
 .all-students .one-student img {
-  width: 150px;
+  width: 130px;
   border-radius: 20%;
 }
 .all-students .one-student .info {
