@@ -5,13 +5,11 @@ function addStudent() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const age = document.getElementById('age').value;
-    const image_link = document.getElementById('image').value;
 
     students_array.newStudent( 
         name, 
         email, 
         age, 
-        image_link 
     );
     
     const studentDiv = document.createElement('div');
@@ -27,7 +25,7 @@ function addStudent() {
     student_name.textContent = name;
     student_age.textContent = age;
     student_email.textContent = email;
-    student_image.src = "../katty.jpg";
+    student_image.src = "../icon.png";
 
     studentDiv.appendChild(student_image);
     studentInfo.appendChild(student_name);

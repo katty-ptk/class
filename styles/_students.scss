@@ -17,14 +17,14 @@
     .one-student {
         display: flex;
         font-family: 'Noto Sans', sans-serif;
-        margin-left: 10px;
+        margin-left: 15px;
 
         &:not(:last-of-type) {
             margin-bottom: 30px;
         }
         
         img {
-            width: 150px;
+            width: 130px;
             border-radius: 20%;
 
         }
